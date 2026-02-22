@@ -96,8 +96,15 @@ Users pick where diagnostic cards live relative to the console via a settings dr
 | **Left** | Vertical sidebar on the left | Wide monitors, side-by-side |
 | **Right** | Vertical sidebar on the right | Wide monitors, preference |
 
-### 📐 Resizable Panel
-Drag-to-resize handle lets you expand the panel up to 70% of viewport or collapse it down to a minimal strip. Height persists across sessions.
+### 📐 Resizable & Moveable Panel
+Two panel modes give you full control of where MidnightVitals lives on your screen:
+
+| Mode | Description | How to Activate |
+|------|------------|-----------------|
+| **Docked** | Fixed to the bottom of the viewport. Drag the top handle to resize vertically (up to 70% of viewport). | Default — or click "Dock" in the panel header |
+| **Floating** | Free-positioned window you can drag anywhere on screen. Resize from the bottom-right corner in both dimensions. | Click "Float" in the panel header, or use the settings dropdown |
+
+Both modes persist position, size, and mode preference to `localStorage` across sessions. Switch between them at any time via the panel header buttons or the settings dropdown on the stethoscope toggle.
 
 ### 🎯 Log Filtering
 Filter console entries by level: Action, Info, Success, Warning, Error — or show all. Copy logs to clipboard. Clear with one click.
@@ -107,6 +114,22 @@ Swap between **Mock** (simulated data for demos) and **Live** (real HTTP pings a
 
 ### 🧭 Automatic Navigation Logging
 The `VitalsNavigationLogger` component auto-captures every route change — no manual wiring needed.
+
+### 🖱️ Interaction Tracking
+The `useVitalsInteraction()` hook logs hover and click events to the CLI console. Hover events are **debounced** (3s cooldown per element) to avoid noise. Clicks always log immediately. Three API styles:
+
+```tsx
+const track = useVitalsInteraction();
+
+// Spread both handlers onto any element
+<button {...track('Create Case')}>Create</button>
+
+// Hover-only (when the element already has its own onClick)
+<div onMouseEnter={track.hover('Stats Card')}>...</div>
+
+// Click-only
+<button onClick={track.click('Submit')}>Submit</button>
+```
 
 ---
 

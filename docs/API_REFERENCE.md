@@ -10,6 +10,7 @@
 - [Hooks](#hooks)
   - [useVitals()](#usevitals)
   - [useVitalsLogger()](#usevitalslogger)
+  - [useVitalsInteraction()](#usevitalsinteraction)
 - [Components](#components)
   - [VitalsProvider](#vitalsprovider)
   - [VitalsPanel](#vitalspanel)
@@ -129,6 +130,79 @@ When you call `vitals.error(message, detail, suggestion)`, the console displays:
              running or has crashed.
              💡 Try running: docker restart midnight-proof-server
 ```
+
+---
+
+### `useVitalsInteraction()`
+
+Interaction tracking hook for hover and click logging. Hover events are debounced (3-second cooldown per label) to avoid spamming the console. Click events always log immediately.
+
+```typescript
+const track = useVitalsInteraction();
+```
+
+#### Returns
+
+A callable `track` function with two additional method properties:
+
+| API | Signature | Description |
+|-----|-----------|-------------|
+| `track(label)` | `(label: string) => { onMouseEnter, onClick }` | Returns both handlers — spread onto any element |
+| `track.hover(label)` | `(label: string) => () => void` | Returns just the debounced hover handler |
+| `track.click(label)` | `(label: string) => () => void` | Returns just the click handler |
+
+#### Usage — Spread both handlers
+
+```tsx
+function MyButton() {
+  const track = useVitalsInteraction();
+
+  return (
+    <button {...track('Create Case button')}>
+      Create Case
+    </button>
+  );
+}
+```
+
+This logs:
+- `Hovered over "Create Case button".` (on mouse enter, debounced)
+- `Clicked "Create Case button".` (on click)
+
+#### Usage — Hover-only (element already has its own onClick)
+
+```tsx
+function CaseRow({ caseData, onClick }) {
+  const track = useVitalsInteraction();
+
+  return (
+    <button onMouseEnter={track.hover(`Case: ${caseData.title}`)} onClick={onClick}>
+      {caseData.title}
+    </button>
+  );
+}
+```
+
+#### Usage — Click-only
+
+```tsx
+const track = useVitalsInteraction();
+
+<button onClick={track.click('Submit form')}>Submit</button>
+```
+
+#### Log Levels
+
+| Event | Level | Console Prefix |
+|-------|-------|----------------|
+| Hover | `info` | `ℹ` |
+| Click | `action` | `►` |
+
+#### Debouncing
+
+Hover events are deduplicated per label — the same label won't log more than once every **3 seconds**. Different labels are tracked independently. Click events are never debounced.
+
+> **Note**: Must be called inside a `<VitalsProvider>`. The hook uses `useVitals()` internally.
 
 ---
 

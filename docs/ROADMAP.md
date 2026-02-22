@@ -102,6 +102,28 @@ Settings ✅     Env validation    Team features      White-label
 - [x] Outside-click closes settings menu
 - [x] Active option highlighted with emerald indicator
 
+### v0.3.7 — Interaction Tracking ✅
+
+- [x] `useVitalsInteraction()` hook for hover and click logging
+- [x] Debounced hover events (3s cooldown per element label)
+- [x] Immediate click event logging
+- [x] Three API styles: `track(label)` spread, `track.hover(label)`, `track.click(label)`
+- [x] Wired into all DemoLand pages: layout, dashboard, login, search, compliance, settings, case-contacts
+
+### v0.3.8 — Floating Panel Mode ✅
+
+- [x] Two panel modes: **Docked** (bottom-fixed, classic) and **Floating** (free-positioned window)
+- [x] Drag-to-move via title bar grip in floating mode
+- [x] Resize from bottom-right corner in floating mode (width + height)
+- [x] Float/Dock toggle button in panel header with icon labels
+- [x] Panel mode selectable from stethoscope settings dropdown (Panel Mode section)
+- [x] Position, size, and mode preference all persist in localStorage across sessions
+- [x] Clamped to viewport edges — panel can't be dragged off-screen
+- [x] Floating panel uses rounded border, elevated shadow, and semi-transparent backdrop
+- [x] New state: `panelMode`, `panelPosition`, `panelWidth` in `VitalsState`
+- [x] New actions: `SET_PANEL_MODE`, `SET_PANEL_POSITION`, `SET_PANEL_WIDTH`
+- [x] `PanelMode` type exported from barrel file
+
 ---
 
 ## Phase 2: Live Mode & npm Package
