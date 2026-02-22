@@ -16,22 +16,36 @@
 </h1>
 
 <p align="center">
-  <strong>The hospital vitals monitor for your Midnight stack.</strong><br/>
-  Continuous health checks. Plain-English logging. Zero-knowledge made visible.
+  <strong>A real-time CLI diagnostic console for Midnight blockchain DApps.</strong><br/>
+  Monitors your wallet, proof server, smart contracts, and network connection with timed health pings — while logging every physical interaction on your UI (hovers, clicks, and their outputs) in a human-readable console.
 </p>
 
 <br/>
 
 <p align="center">
+  <a href="#-project-status">Status</a> •
   <a href="#-quick-start">Quick Start</a> •
   <a href="#-features">Features</a> •
-  <a href="#-how-it-works">How It Works</a> •
   <a href="#-card-layouts">Card Layouts</a> •
   <a href="#-api-reference">API</a> •
   <a href="#-architecture">Architecture</a> •
   <a href="#-roadmap">Roadmap</a> •
   <a href="docs/">Full Docs</a>
 </p>
+
+---
+
+## What Is MidnightVitals?
+
+MidnightVitals is a **developer/admin diagnostic console** built to help you debug and verify your Midnight DApp while being assured that all your dependencies are running and configured correctly. It pings everything on a timer — proof server, network indexer, wallet, smart contracts — and presents the results in a super intuitive UI that any DApp admin can attach to their project.
+
+The CLI console also gives a real-time readout of everything happening physically on the UI: what the user hovered over, what they clicked, and what the output was. It's closable, moveable (dock it or float it anywhere on screen), and designed to stay out of the way until you need it.
+
+### ⚠️ Project Status
+
+> **This repo is the future standalone package.** The source code currently lives inside the [AutoDiscovery.legal](https://github.com/SpyCrypto/AutoDiscovery) frontend, where MidnightVitals was born and is actively developed. This repo contains the documentation, architecture, and roadmap — the actual source will be extracted here once the module is stable enough to work as a plug-and-play npm package for any Midnight DApp.
+>
+> **What's left to make it standalone:** build pipeline (tsup/vite lib mode), `package.json` with peer deps, CSS extraction strategy for Tailwind consumers, optional `react-router-dom` integration, and tests.
 
 ---
 
@@ -367,6 +381,8 @@ Both modes implement the same `VitalsProviderInterface` — the UI is completely
 | v0.2.0 | 4 vital monitors with animated time wheels | ✅ Shipped |
 | v0.3.0 | Console log with filtering, newest-on-top, granular UI logging | ✅ Shipped |
 | v0.3.5 | Card layout settings (top/left/right) + settings dropdown | ✅ Shipped |
+| v0.3.7 | Interaction tracking — debounced hover + click logging via `useVitalsInteraction()` | ✅ Shipped |
+| v0.3.8 | Floating panel mode — drag anywhere, resize from corner, dock/float toggle | ✅ Shipped |
 
 ### Coming Next
 
