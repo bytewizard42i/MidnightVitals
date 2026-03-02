@@ -492,7 +492,7 @@ MIT — Free to use, modify, and distribute.
 
 <p align="center">
   <sub>
-    Built with ❤️ by <a href="https://github.com/bytewizard42i">John (SpyCrypto)</a> & Penny 🎀
+    Built with ❤️ by <a href="https://github.com/bytewizard42i">John (bytewizard42i)</a> & Penny 🎀
     <br/>
     Part of the <strong>AutoDiscovery.legal</strong> ecosystem — Zero-knowledge legal discovery on Midnight blockchain.
   </sub>
