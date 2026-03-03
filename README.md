@@ -404,7 +404,7 @@ Both modes implement the same `VitalsProviderInterface` — the UI is completely
 | **Cost Analytics** | Track tDUST/DUST spend per transaction, per contract, per user |
 | **Plugin System** | Custom health check plugins for any external service |
 | **Multi-Chain** | Extend beyond Midnight to other ZK chains (Aztec, Mina, Aleo) |
-| **[HuddleBridge](https://github.com/bytewizard42i/huddlebridge_app_me_us) Integration** | Monitor LiveKit SFU health, WebRTC connection quality, soulbound token minting, session memory writes, and Midnight contract state — all from the MidnightVitals panel during live video spaces |
+| **[HuddleVitals](https://github.com/bytewizard42i/huddlebridge_app_me_us/blob/main/docs/HUDDLEVITALS_DESIGN.md)** | First plugin test case for MidnightVitals. Extends the core 4 vitals with 6 HB-specific monitors: LiveKit SFU health, WebRTC quality per participant, anti-rug engine state, soulbound token minting, session memory writes, and predictive signal monitoring. Validates the plugin architecture. See `@huddlebridge/vitals` package. |
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the full phased plan.
 
