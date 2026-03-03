@@ -495,6 +495,6 @@ MIT — Free to use, modify, and distribute.
   <sub>
     Built with ❤️ by <a href="https://github.com/bytewizard42i">John (bytewizard42i)</a> & Penny 🎀
     <br/>
-    Part of the <strong>AutoDiscovery.legal</strong> ecosystem — Zero-knowledge legal discovery on Midnight blockchain.
+    Part of the <strong><a href="https://enterprisezk.com">EnterpriseZK Labs</a></strong> portfolio — Cross-cutting diagnostics for all <a href="https://github.com/bytewizard42i/didz-dapp-system">DIDz ecosystem</a> products on Midnight.
   </sub>
 </p>
