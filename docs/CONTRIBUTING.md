@@ -373,7 +373,7 @@ Be kind. Be constructive. We're all building something cool together.
 
 <p align="center">
   <sub>
-    Contributing Guide maintained by John (SpyCrypto) & Penny 🎀<br/>
+    Contributing Guide maintained by John (bytewizard42i) & Penny 🎀<br/>
     Part of the <strong>MidnightVitals</strong> project.
   </sub>
 </p>

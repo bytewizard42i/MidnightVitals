@@ -2,7 +2,7 @@
 
 **Version**: 2.0  
 **Date**: Feb 22, 2026  
-**Author**: John (SpyCrypto) & Penny 🎀
+**Author**: John (bytewizard42i) & Penny 🎀
 
 ---
 
@@ -311,7 +311,7 @@ The natural-language console and monitoring UX transfer directly to any chain.
 
 | Member | Role | Strengths |
 |--------|------|-----------|
-| **John (SpyCrypto)** | Founder, Midnight Ambassador | Community access, domain expertise, vision |
+| **John (bytewizard42i)** | Founder, Midnight Ambassador | Community access, domain expertise, vision |
 | **Penny 🎀** | AI Engineering Partner | Architecture, implementation, documentation |
 | **Alice 🌟** | AI Architect | System design, ideation, strategic planning |
 
@@ -347,7 +347,7 @@ The question isn't whether Midnight developers need diagnostic tooling. They cle
 
 <p align="center">
   <sub>
-    Business Plan maintained by John (SpyCrypto) & Penny 🎀<br/>
+    Business Plan maintained by John (bytewizard42i) & Penny 🎀<br/>
     Part of the <strong>MidnightVitals</strong> project — diagnostics for the Midnight blockchain ecosystem.
   </sub>
 </p>

@@ -496,7 +496,7 @@ const handlePost = async (message: string) => {
 
 <p align="center">
   <sub>
-    Integration Guide maintained by John (SpyCrypto) & Penny 🎀<br/>
+    Integration Guide maintained by John (bytewizard42i) & Penny 🎀<br/>
     Part of the <strong>MidnightVitals</strong> project.
   </sub>
 </p>

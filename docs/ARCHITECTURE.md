@@ -551,7 +551,7 @@ No other runtime dependencies. The module is designed to work with any React 18+
 
 <p align="center">
   <sub>
-    Architecture document maintained by John (SpyCrypto) & Penny 🎀<br/>
+    Architecture document maintained by John (bytewizard42i) & Penny 🎀<br/>
     Part of the <strong>MidnightVitals</strong> project — diagnostics for the Midnight blockchain ecosystem.
   </sub>
 </p>

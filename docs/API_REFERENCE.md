@@ -720,7 +720,7 @@ export { MockVitalsProvider } from './mock-vitals-provider';
 
 <p align="center">
   <sub>
-    API Reference maintained by John (SpyCrypto) & Penny 🎀<br/>
+    API Reference maintained by John (bytewizard42i) & Penny 🎀<br/>
     Part of the <strong>MidnightVitals</strong> project.
   </sub>
 </p>

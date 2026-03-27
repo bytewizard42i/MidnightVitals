@@ -381,7 +381,7 @@ All icons come from [Lucide React](https://lucide.dev/):
 
 <p align="center">
   <sub>
-    Design Specification maintained by John (SpyCrypto) & Penny 🎀<br/>
+    Design Specification maintained by John (bytewizard42i) & Penny 🎀<br/>
     Part of the <strong>MidnightVitals</strong> project.
   </sub>
 </p>

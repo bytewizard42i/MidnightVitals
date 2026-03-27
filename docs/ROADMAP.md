@@ -336,7 +336,7 @@ Have ideas? Open an issue on [GitHub](https://github.com/bytewizard42i/MidnightV
 
 <p align="center">
   <sub>
-    Roadmap maintained by John (SpyCrypto) & Penny 🎀<br/>
+    Roadmap maintained by John (bytewizard42i) & Penny 🎀<br/>
     Part of the <strong>MidnightVitals</strong> project — diagnostics for the Midnight blockchain ecosystem.
   </sub>
 </p>
