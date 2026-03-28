@@ -66,10 +66,10 @@ Before writing code, familiarize yourself with:
 
 ### Running the Development Environment
 
-MidnightVitals is currently embedded in the AutoDiscovery.legal frontend. To develop against it:
+MidnightVitals is currently embedded in the DiscoveryManagement frontend. To develop against it:
 
 ```bash
-# Clone the host application (AutoDiscovery.legal)
+# Clone the host application (DiscoveryManagement)
 cd frontend-vite-react
 npm install
 npm run dev

@@ -39,7 +39,7 @@
 Until the npm package is published, copy the vitals source directly:
 
 ```bash
-# From the AutoDiscovery.legal repo (or wherever the source lives)
+# From the DiscoveryManagement repo (or wherever the source lives)
 cp -r src/vitals/ your-project/src/vitals/
 ```
 
@@ -354,7 +354,7 @@ function ProofServerStatus() {
 
 ## Integration Examples
 
-### AutoDiscovery.legal (Full Integration)
+### DiscoveryManagement (Full Integration)
 
 The reference implementation — a legal discovery platform on Midnight:
 

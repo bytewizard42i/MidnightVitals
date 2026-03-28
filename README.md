@@ -43,7 +43,7 @@ The CLI console also gives a real-time readout of everything happening physicall
 
 ### ⚠️ Project Status
 
-> **This repo is the future standalone package.** The source code currently lives inside the [AutoDiscovery.legal](https://github.com/bytewizard42i/autoDiscovery_legal) frontend, where MidnightVitals was born and is actively developed. This repo contains the documentation, architecture, and roadmap — the actual source will be extracted here once the module is stable enough to work as a plug-and-play npm package for any Midnight DApp.
+> **This repo is the future standalone package.** The source code currently lives inside the [DiscoveryManagement](https://github.com/bytewizard42i/DiscoveryManagement) frontend, where MidnightVitals was born and is actively developed. This repo contains the documentation, architecture, and roadmap — the actual source will be extracted here once the module is stable enough to work as a plug-and-play npm package for any Midnight DApp.
 >
 > **What's left to make it standalone:** build pipeline (tsup/vite lib mode), `package.json` with peer deps, CSS extraction strategy for Tailwind consumers, optional `react-router-dom` integration, and tests.
 
