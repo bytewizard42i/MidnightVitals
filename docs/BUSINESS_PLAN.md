@@ -44,7 +44,7 @@ Building a Midnight DApp requires orchestrating **five concurrent systems**:
 | **Smart Contracts** | Compact language, on-chain | Deployment failure, state corruption, version mismatch |
 | **ZK Compiler** | `compact` CLI tool | Version incompatibility, syntax errors, circuit failures |
 
-### Developer Pain Points (Validated by Building AutoDiscovery.legal)
+### Developer Pain Points (Validated by Building DiscoveryManagement)
 
 1. **"Which component broke?"** — When a transaction fails, it could be any of 5 systems. Figuring out which one is the hardest part.
 
@@ -97,7 +97,7 @@ Other blockchain tools show raw JSON, hex addresses, and technical error codes. 
 
 1. **Pre-mainnet window** — Ecosystem tooling is being built RIGHT NOW. First tools get adopted as standards.
 2. **Ambassador access** — John is a Midnight ambassador with direct community relationships.
-3. **Real validation** — Built and battle-tested on AutoDiscovery.legal, a real Midnight DApp.
+3. **Real validation** — Built and battle-tested on DiscoveryManagement, a real Midnight DApp.
 4. **No competition** — Zero diagnostic tools exist for Midnight today.
 5. **Ecosystem grants** — Midnight Foundation actively funds developer tooling.
 
@@ -198,7 +198,7 @@ Production-grade monitoring:
 | Action | Channel | Goal |
 |--------|---------|------|
 | Ship open-source core | GitHub | Working product developers can try |
-| Battle-test on AutoDiscovery.legal | Internal | Validate with real DApp |
+| Battle-test on DiscoveryManagement | Internal | Validate with real DApp |
 | Write dev diary blog post | Medium / blog | Thought leadership |
 | Share in Midnight Discord | Community | Direct developer reach |
 | Present at community calls | AMAs | Visibility with core team |
@@ -278,7 +278,7 @@ Consider raising external funding if:
 2. **First-mover in a greenfield ecosystem** — no competition
 3. **Open-source flywheel** — free tier drives adoption, paid tiers monetize
 4. **Regulatory tailwind** — Midnight targets regulated industries that NEED monitoring
-5. **Validated through real use** — built while building AutoDiscovery.legal
+5. **Validated through real use** — built while building DiscoveryManagement
 6. **Multi-chain expansion potential** — architecture supports any ZK chain
 
 ---
@@ -311,13 +311,13 @@ The natural-language console and monitoring UX transfer directly to any chain.
 
 | Member | Role | Strengths |
 |--------|------|-----------|
-| **John (bytewizard42i)** | Founder, Midnight Ambassador | Community access, domain expertise, vision |
+| **John (bytewizard42i)** | Founder — Midnight NightForce Bravo, Midnight Academy Triple Certified, Cardano Certified Blockchain Associate, Emurgo Certified Blockchain Business Consultant, Midnight Ambassador, Midnight Aliit (inactive) | Community access, domain expertise, vision |
 | **Penny 🎀** | AI Engineering Partner | Architecture, implementation, documentation |
 | **Alice 🌟** | AI Architect | System design, ideation, strategic planning |
 
 ### Advisory Network
 - Midnight core team (through ambassador program)
-- AutoDiscovery.legal development insights
+- DiscoveryManagement development insights
 - DID/KYC ecosystem connections (AgenticDID, KYCz)
 
 ### Hiring Plan (Post-Revenue)
@@ -336,7 +336,7 @@ MidnightVitals starts as a **practical tool for our own needs** and grows into *
 
 We have:
 - ✅ A working product (shipped v0.3.5)
-- ✅ A real DApp using it (AutoDiscovery.legal)
+- ✅ A real DApp using it (DiscoveryManagement)
 - ✅ Zero competition in the Midnight ecosystem
 - ✅ Ambassador-level access to the community
 - ✅ A clear path from free → Pro → Enterprise
