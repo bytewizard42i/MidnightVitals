@@ -408,6 +408,14 @@ Both modes implement the same `VitalsProviderInterface` — the UI is completely
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the full phased plan.
 
+### Planned Consumers
+
+| DApp | Status | Integration plan |
+|------|--------|------------------|
+| **[DiscoveryManagement](https://github.com/bytewizard42i/DiscoveryManagement)** | ✅ Source-of-truth (MidnightVitals was born here) | The vitals components live in DiscoveryManagement's frontend today. Extraction to standalone package is what unblocks all other consumers. |
+| **[ProofOrBluff (POB)](https://github.com/bytewizard42i/ProofOrBluff_MLH_Midnight)** | 🟡 Phase 3 — committed consumer #2 | POB's `realDeal` app will mount MidnightVitals as an admin-only diagnostic overlay (live ping + interaction log) once it ships as a real npm package. Plan & open Tailwind/CSS questions documented at `realDeal/docs/PHASE_3_MIDNIGHTVITALS.md` in the POB repo. |
+| **[HuddleBridge](https://github.com/bytewizard42i/huddlebridge_app_me_us)** | 🟡 Future — first plugin test case | Will extend the core 4 vitals with 6 HB-specific monitors via the planned plugin system. See HuddleVitals row above. |
+
 ---
 
 ## 🧪 Currently Built With
