@@ -15,15 +15,6 @@
   <sub><sup>Real-Time Diagnostics for Midnight Blockchain DApps</sup></sub>
 </h1>
 
-> **Authority and implementation status:** The canonical protocol requirements
-> live in the DIDzM root at
-> [`DIDzMonolith-docs/standards/MIDNIGHTVITALS_PROTOCOL.md`](../DIDzMonolith-docs/standards/MIDNIGHTVITALS_PROTOCOL.md).
-> This repository is the standalone implementation home. It currently contains
-> documentation and roadmap material; the working UI source remains in
-> `DiscoveryManagement/MidnightVitals` pending audited extraction. Feature text
-> below may therefore describe implemented UI behavior, mock behavior, or planned
-> standalone behavior and must be read with its local status label.
-
 <p align="center">
   <strong>A real-time CLI diagnostic console for Midnight blockchain DApps.</strong><br/>
   Monitors your wallet, proof server, smart contracts, and network connection with timed health pings — while logging every physical interaction on your UI (hovers, clicks, and their outputs) in a human-readable console.
