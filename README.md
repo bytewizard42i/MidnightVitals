@@ -50,11 +50,22 @@ MidnightVitals is a **developer/admin diagnostic console** built to help you deb
 
 The CLI console also gives a real-time readout of everything happening physically on the UI: what the user hovered over, what they clicked, and what the output was. It's closable, moveable (dock it or float it anywhere on screen), and designed to stay out of the way until you need it.
 
-### ⚠️ Project Status
+### ✅ Project Status (updated Aug 2, 2026)
 
-> **This repo is the future standalone package.** The source code currently lives inside the [DiscoveryManagement](https://github.com/bytewizard42i/DiscoveryManagement) frontend, where MidnightVitals was born and is actively developed. This repo contains the documentation, architecture, and roadmap — the actual source will be extracted here once the module is stable enough to work as a plug-and-play npm package for any Midnight DApp.
+> **This repo now has its heartbeat.** `packages/core`
+> (`@midnight-vitals/core`) is a HEADLESS probe library — node, indexer,
+> proof server, toolchain, Docker stack, and on-chain address activity —
+> and `packages/cli` gives `vitals check [--target preprod] [--json]`.
+> Both verified live against localnet and preprod. Protocol authority:
+> `DIDzMonolith-docs/standards/MIDNIGHTVITALS_PROTOCOL.md` (now real).
 >
-> **What's left to make it standalone:** build pipeline (tsup/vite lib mode), `package.json` with peer deps, CSS extraction strategy for Tailwind consumers, optional `react-router-dom` integration, and tests.
+> The React panel born in [DiscoveryManagement](https://github.com/bytewizard42i/DiscoveryManagement)
+> and extended in the ZKSplunk fork (`ZKSplunk_AlexP-fork_johns-copy/vitals/`)
+> is still to be extracted here as `packages/react` — a thin renderer over
+> core's `VitalReading`s, per the protocol. An MCP server wrapper is
+> planned on the same core. Docs below predate the core package where they
+> describe UI internals; the ARCHITECTURE/API docs remain authoritative
+> for the React panel design.
 
 ---
 
@@ -398,9 +409,9 @@ Both modes implement the same `VitalsProviderInterface` — the UI is completely
 | Version | Feature | Priority |
 |---------|---------|----------|
 | v0.4.0 | Self-diagnostic report ("Run Diagnostics" full system scan) | High |
-| v0.5.0 | Live provider — real HTTP health checks to proof server & indexer | High |
-| v0.6.0 | Dependency verification (Docker, Node, Compact compiler) | Medium |
-| v0.7.0 | npm package extraction (`@midnight-vitals/core`) | Medium |
+| v0.5.0 | ~~Live provider — real HTTP health checks to proof server & indexer~~ ✅ DONE Aug 2 2026 (`packages/core` probes) | High |
+| v0.6.0 | ~~Dependency verification (Docker, Node, Compact compiler)~~ ✅ DONE Aug 2 2026 (`toolchain` + `docker-stack` probes) | Medium |
+| v0.7.0 | ~~npm package extraction (`@midnight-vitals/core`)~~ ✅ DONE Aug 2 2026 (plus `@midnight-vitals/cli`) | Medium |
 | v1.0.0 | Stable public release with full documentation | High |
 
 ### Future Vision
