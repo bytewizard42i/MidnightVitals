@@ -1,0 +1,22 @@
+{
+  "name": "@midnight-vitals/core",
+  "version": "0.1.0",
+  "description": "Headless diagnostic probes for the Midnight ecosystem: node, indexer, proof server, toolchain, Docker stack, and on-chain address activity. Zero UI dependencies — call it from any project, CLI, CI job, or MCP server.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1"
+  }
+}

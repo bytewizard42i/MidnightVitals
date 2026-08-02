@@ -1,0 +1,13 @@
+{
+  "name": "@midnight-vitals/cli",
+  "version": "0.1.0",
+  "description": "Command-line front end for @midnight-vitals/core: `vitals check --target preprod` prints a traffic-light table of Midnight infrastructure health.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": { "vitals": "./dist/main.js" },
+  "main": "./dist/main.js",
+  "files": ["dist"],
+  "dependencies": {
+    "@midnight-vitals/core": "0.1.0"
+  }
+}
